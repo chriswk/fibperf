@@ -1,0 +1,21 @@
+name:                fibperf
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/chriswk/fibperf#readme
+license:             BSD3
+author:              Christopher Kolstad
+maintainer:          haskell@chriswk.no
+copyright:           2018 CK
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - criterion
+
+executables:
+  fibperf:
+    source-dirs:      src
+    main:             Main.hs
