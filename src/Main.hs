@@ -14,12 +14,14 @@ main =
         [ bench "10" $ whnf listF 10
         , bench "20" $ whnf listF 20
         , bench "30" $ whnf listF 30
+        , bench "50" $ whnf listF 50
         ]
     , bgroup
         "scanfib"
         [ bench "10" $ whnf scanF 10
         , bench "20" $ whnf scanF 20
         , bench "30" $ whnf scanF 30
+        , bench "50" $ whnf scanF 50
         ]
     ]
 
